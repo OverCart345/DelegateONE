@@ -155,11 +155,8 @@ namespace DelegateZ1
                     
                     switch (current_Button)
                     {
-                        case Alpha.sum: magic(Convert.ToInt32(Alpha.sum)); break;
-                        case Alpha.sub: magic(Convert.ToInt32(Alpha.sub)); break;
-                        case Alpha.mul: magic(Convert.ToInt32(Alpha.mul)); break;
-                        case Alpha.del: magic(Convert.ToInt32(Alpha.del)); break;
                         case Alpha.exit: Environment.Exit(1); break;
+                        default: magic(Convert.ToInt32(current_Button)); break;
                     }
                 }
 
